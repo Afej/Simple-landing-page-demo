@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body,
+html {
+  height: calc(100% - 2em);
+  margin: 0;
+  font-family: 'Pacifico',
+    cursive;
+}
+
+body {
+  background: rgb(128, 14, 242);
+  background: -moz-linear-gradient(45deg, rgb(128, 14, 242) 1%, rgb(232, 141, 224) 100%);
+  background: -webkit-linear-gradient(45deg, rgb(128, 14, 242) 1%, rgb(232, 141, 224) 100%);
+  background: linear-gradient(45deg, rgb(128, 14, 242) 1%, rgb(232, 141, 224) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800ef2', endColorstr='#e88de0', GradientType=1);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+aside {
+  color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1.5em;
+}
+
+#icon i {
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+nav {
+  background: whitesmoke;
+}
+
+.active {
+  position: absolute;
+  display: block;
+  background: whitesmoke;
+  width: 40%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.9;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.2em 2em;
+  color: black;
+}
+
+main {
+  background: whitesmoke;
+  padding: 1em 1.2em;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+#portfolio {
+  display: block;
+  padding: .5em 1em;
+  background: blue;
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 2em;
+  }
+
+  #icon {
+    display: none;
+  }
+
+  aside {
+    background: rgb(127, 204, 255);
+    grid-template-columns: auto;
+    grid-template-rows: 30% auto;
+    padding: 0;
+  }
+
+  main {
+    padding: 3em;
+    text-align: center;
+  }
+
+  #avatar {
+    border-radius: 50%;
+    background: white;
+    width: 60px;
+    height: 60px;
+    margin: 2em auto 1em auto;
+  }
+
+  figcaption {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
+
+  ul {
+    display: block;
+    margin-top: 2em;
+    text-align: center;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+  }
+
+  ul li a {
+    font-size: .6em;
+    padding: 1em 2em;
+  }
+
+  ul li a:hover {
+    background-color: aliceblue;
+  }
+
+  nav {
+    background: none;
+  }
+
+  #portfolio {
+    display: inline-block;
+    font-size: 1em;
+    padding: .8em 3m;
+
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+}

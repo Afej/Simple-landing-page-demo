@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <aside>
+    <figure>
+      <div id="avatar"></div>
+      <figcaption>WhistleHouse</figcaption>
+    </figure>
+
+    <a href="#" id="icon"><i class="fas fa-bars fa-2x"></i></a>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Porfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+  <main>
+    <h1>We are Whistlehouse</h1>
+    <p>We handle your designs, animations, cinematography at another level.</p>
+    <a href="#" id="portfolio">Check our portfolio</a>
+  </main>
+
+
+  <script>
+    (function () {
+      var menu = document.querySelector('ul'),
+        menulink = document.getElementById('icon');
+
+      menulink.addEventListener('click', function (e) {
+        menu.classList.toggle('active');
+
+        e.preventDefault();
+      })
+    })();
+  </script>
+</body>
+
+</html>
